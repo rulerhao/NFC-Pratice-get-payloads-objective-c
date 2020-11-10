@@ -14,6 +14,7 @@
 		6361346E255A1FBE00A71871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6361346D255A1FBE00A71871 /* Assets.xcassets */; };
 		63613471255A1FBE00A71871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6361346F255A1FBE00A71871 /* LaunchScreen.storyboard */; };
 		63613474255A1FBE00A71871 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63613473255A1FBE00A71871 /* main.m */; };
+		6361347F255A223400A71871 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6361347E255A223400A71871 /* AuthenticationServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		63613470255A1FBE00A71871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63613472255A1FBE00A71871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63613473255A1FBE00A71871 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6361347B255A21C700A71871 /* NFC Pratice objective c.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NFC Pratice objective c.entitlements"; sourceTree = "<group>"; };
+		6361347E255A223400A71871 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6361347F255A223400A71871 /* AuthenticationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +51,7 @@
 			children = (
 				63613460255A1FBC00A71871 /* NFC Pratice objective c */,
 				6361345F255A1FBC00A71871 /* Products */,
+				6361347D255A223400A71871 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +66,7 @@
 		63613460255A1FBC00A71871 /* NFC Pratice objective c */ = {
 			isa = PBXGroup;
 			children = (
+				6361347B255A21C700A71871 /* NFC Pratice objective c.entitlements */,
 				63613461255A1FBC00A71871 /* AppDelegate.h */,
 				63613462255A1FBC00A71871 /* AppDelegate.m */,
 				63613464255A1FBC00A71871 /* SceneDelegate.h */,
@@ -74,6 +80,14 @@
 				63613473255A1FBE00A71871 /* main.m */,
 			);
 			path = "NFC Pratice objective c";
+			sourceTree = "<group>";
+		};
+		6361347D255A223400A71871 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6361347E255A223400A71871 /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +305,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "NFC Pratice objective c/NFC Pratice objective c.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W4395MK238;
 				INFOPLIST_FILE = "NFC Pratice objective c/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,9 +325,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "NFC Pratice objective c/NFC Pratice objective c.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W4395MK238;
 				INFOPLIST_FILE = "NFC Pratice objective c/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

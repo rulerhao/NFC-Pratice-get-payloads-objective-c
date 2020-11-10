@@ -6,8 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreNFC/CoreNFC.h>
 
 @interface ViewController : UIViewController
+< NFCNDEFReaderSessionDelegate >
 
 
 @end
